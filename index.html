@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 2 Mactal</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+ <style>
+    body {
+        background: linear-gradient(135deg, #f8d49c, #7a5949);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #222;
+        margin: auto;
+        padding: 30px;
+        max-width: 600px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+        text-align: center;
+        color: #2d3436;
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 15px;
+        text-align: left;
+        margin: 10px 0 5px 0;
+        color: #555;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 18px;
+        border: 2px solid #eb983a;
+        border-radius: 8px;
+        font-size: 15px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        border-color: #eb4d4b;
+        background-color: #fff9f2;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #eb4d4b;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: #d63031;
+        transform: scale(1.02);
+    }
+
+    #output {
+        font-weight: normal;
+        color: #2d3436;
+        text-align: left;
+        padding: 10px;
+        background: #fdf2e9;
+        border-left: 4px solid #f0932b;
+        border-radius: 6px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    
+    <h2>String Showcase: My Basic Info</h2>
+    <p>Name:</p>
+    <input type="text" name="" id="name" placeholder="Lebron James">
+
+    <p>Age:</p>
+    <input type="number" name="" id="age" placeholder="67">
+
+    <p>School:</p>
+    <input type="text" name="" id="school" placeholder="OBMC">
+
+
+    <button py-click="generate_message">generate message</button>
+
+    <br>
+
+    <div id="output">
+        
+    </div>
+
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
